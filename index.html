@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NITC Connect - Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-box">
+      <img src="assets/images/nitc-logo.png" alt="NITC Logo" class="logo">
+      <h2>NITC Connect</h2>
+      <p class="subtitle">Your gateway to the campus community</p>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your Gmail" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="btn-login">Login</button>
+
+        <p class="forgot-password"><a href="#">Forgot password?</a></p>
+
+        <div class="divider">or</div>
+
+        <div class="social-login">
+          <button type="button" class="btn-social google">Login with Google</button>
+          <button type="button" class="btn-social github">Login with GitHub</button>
+        </div>
+      </form>
+
+      <p class="signup-text">Don’t have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+
+  <script src="js/login.js" defer></script>
+</body>
+</html>

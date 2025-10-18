@@ -1,0 +1,147 @@
+/* General Page Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Logo and Titles */
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+h2 {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color: #1a237e;
+}
+.subtitle {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.input-group label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 0.95rem;
+}
+.input-group input:focus {
+  border-color: #0052D4;
+}
+
+/* Buttons */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  background: #0052D4;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-login:hover {
+  background: #003c9e;
+}
+
+/* Extra Links */
+.forgot-password {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+.forgot-password a {
+  color: #0052D4;
+  text-decoration: none;
+}
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #888;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+  top: 50%;
+}
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+
+/* Social Buttons */
+.btn-social {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.google {
+  background: #db4437;
+  color: white;
+}
+.github {
+  background: #333;
+  color: white;
+}
+.btn-social:hover {
+  opacity: 0.9;
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+.signup-text a {
+  color: #0052D4;
+  text-decoration: none;
+}
+.signup-text a:hover {
+  text-decoration: underline;
+}

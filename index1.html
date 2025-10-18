@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NITC Connect - Enhanced Campus Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- MAIN WEBSITE CONTENT -->
+  <nav>
+    <div class="logo">NITC Connect</div>
+    <div class="nav-center">
+      <div class="search-bar">
+        <input type="text" placeholder="Search marketplace, events, clubs...">
+        <span class="search-icon">🔍</span>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn">
+        🔔
+        <span class="badge">1</span>
+      </button>
+      <button class="icon-btn">💬</button>
+      <button class="icon-btn">⭐</button>
+      <div class="user-avatar">Profile</div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to NITC Connect</h1>
+    <p>Your Complete Campus Ecosystem - Buy, Sell, Connect & Grow</p>
+  </section>
+
+  <section class="quick-access">
+    <div class="quick-grid">
+      <div class="quick-card" onclick="loadSection('marketplace')">
+        <div class="quick-icon">🛒</div>
+        <div class="quick-label">Marketplace</div>
+      </div>
+      <div class="quick-card" onclick="loadSection('lost-found')">
+        <div class="quick-icon">🔍</div>
+        <div class="quick-label">Lost & Found</div>
+      </div>
+      <div class="quick-card" onclick="loadSection('events')">
+        <div class="quick-icon">📅</div>
+        <div class="quick-label">Events</div>
+      </div>
+      <div class="quick-card" onclick="loadSection('placement')">
+        <div class="quick-icon">📊</div>
+        <div class="quick-label">Placements</div>
+      </div>
+      <div class="quick-card" onclick="loadSection('clubs')">
+        <div class="quick-icon">🎭</div>
+        <div class="quick-label">Clubs</div>
+      </div>
+      <div class="quick-card" onclick="loadSection('hostel')">
+        <div class="quick-icon">🏠</div>
+        <div class="quick-label">Hostel</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-content">
+    <div class="section-header">
+      <h2 class="section-title" id="sectionTitle">Trending in Marketplace</h2>
+      <div class="filter-tabs">
+        <button class="tab active" onclick="filterItems('all')">All</button>
+        <button class="tab" onclick="filterItems('books')">Books</button>
+        <button class="tab" onclick="filterItems('vehicles')">Vehicles</button>
+        <button class="tab" onclick="filterItems('instruments')">Instruments</button>
+      </div>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid">
+    </div>
+  </section>
+
+  <button class="fab" onclick="showAddItemModal()">+</button>
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>NITC Connect</h3>
+        <p style="color: #94A3B8; margin-top: 1rem;">Connecting the NITC community through technology and innovation.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Help Center</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="mailto:support@nitcconnect.edu">support@nitcconnect.edu</a>
+          <a href="#">Report an Issue</a>
+          <a href="#">Feedback</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="footer-links">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NITC Connect. All rights reserved. Made with ❤️ for the NITC community.</p>
+    </div>
+  </footer>
+
+  <script>
+    function loadSection(section) {
+      document.getElementById("sectionTitle").innerText = `Trending in ${section.charAt(0).toUpperCase() + section.slice(1)}`;
+    }
+
+    function filterItems(category) {
+      console.log("Filter by:", category);
+    }
+
+    function showAddItemModal() {
+      alert("Add item modal coming soon!");
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
